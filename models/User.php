@@ -73,7 +73,7 @@
                 // データベースとの接続を切る
                 self::close_connection($pdo, $stmt);
                 // Userクラスのインスタンスを返す
-                return $users;
+                return $user;
             } catch (PDOException $e) {
                 return null;
             }

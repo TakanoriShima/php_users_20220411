@@ -40,8 +40,8 @@
             </div> 
             
             <div class="row">
-                <a href="edit.php?id=<?= $id ?>" class="col-sm-6 btn btn-primary">編集</a>
-                <form class="col-sm-6" action="destroy.php" method="POST">
+                <a href="edit_users.php?id=<?= $id ?>" class="col-sm-6 btn btn-primary">編集</a>
+                <form class="col-sm-6" action="destroy_users.php" method="POST">
                     <input type="hidden" name="_token" value="<?= $token ?>">
                     <input type="hidden" name="id" value="<?= $id ?>">
                     <button type="submit" class="btn btn-danger col-sm-12" onclick="return confirm('ユーザーを削除します。よろしいですか？')">削除</button>
